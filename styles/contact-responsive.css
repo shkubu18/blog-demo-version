@@ -1,0 +1,126 @@
+/******* laptops *******/
+@media screen and (max-width: 992px) {
+    .container {
+        width: 768px;
+    }
+}
+
+/******* tablets *******/
+@media screen and (max-width: 820px) {
+    .container {
+        width: 576px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header .mobile-menu {
+        display: flex;
+        gap: 0 5px;
+        cursor: pointer;
+        padding-block: 15px;
+        font-size: 17px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav.active {
+        display: flex;
+        position: absolute;
+        background: linear-gradient(45deg, rgb(70, 12, 206), black);
+        width: 100%;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+    }
+
+    header nav.active > div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    header nav.active a {
+        display: block;
+        padding: 12.5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    header nav.active > div:last-child a:last-child {
+        border-bottom: 0;
+    }
+
+    header > .container {
+        justify-content: space-between;
+    }
+
+    .container.contact.view-port-fit {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        width: 576px;
+    }
+    
+    footer {
+        height: initial;
+    }
+}
+
+/******* mobile phones *******/
+@media screen and (max-width: 580px) {
+    header {
+        padding-inline: 10px;
+
+    }
+    .container.contact.view-port-fit {
+        width: 200px;
+        box-sizing: border-box;
+    }
+
+    .contact-form {
+        padding-left: 20px;
+    }
+
+    .contact-form-group input,
+    .contact-form-group textarea {
+        width: 300px;
+    }
+
+    .contact-info h2 {
+        font-size: 20px;
+    }
+
+    .contact-info ul {
+        width: 250px;
+    }
+
+    .contact-info ul li {
+        padding-inline: 10px;
+    }
+    
+    .container.contact.view-port-fit {
+        margin: 0;
+    }
+
+    footer {
+        padding-inline: 10px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .contact-info ul {
+        width: 150px;
+        overflow: scroll;
+    }
+
+    .contact-form-group input,
+    .contact-form-group textarea {
+        width: 150px;
+    }
+
+    .contact-form h1 {
+        font-size: 20px;
+    }
+
+}

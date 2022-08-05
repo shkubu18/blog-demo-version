@@ -1,0 +1,43 @@
+.main-img {
+   width: 100%;
+   aspect-ratio: 16/9;
+   object-fit: cover;
+   margin-top: 20px;
+   box-shadow: 0px 0px 10px 3px black;
+   border-radius: 10px;
+}
+
+h1 {
+    font-weight: 100;
+    color: white;
+}
+
+p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.similar-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.similar-container h3 {
+    grid-column: 1 / span 4;
+    font-weight: 400;
+}
+
+.last-button {
+    margin-bottom: 40px;
+    color: white;
+    background: linear-gradient(45deg, rgb(70, 208, 250), rgb(70, 12, 206));
+    padding: 10px 442px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 15px;
+    font-weight: 700;
+    box-sizing: border-box;
+    cursor: pointer;
+}

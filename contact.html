@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კონტაქტი</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/contact-responsive.css">
+</head>
+
+<body>
+
+    <header class="d-flex">
+        <div class="container d-flex">
+            <a href="index.html">
+                <img class="logo" src="assets/icons/logo.svg" alt="საიტის ლოგო">
+            </a>
+            <nav id="nav">
+                <div>
+                    <a href="index.html">მთავარი</a>
+
+                    <a href="contact.html">კონტაქტი</a>
+                    <a href="help.html">დახმარება</a>
+                </div>
+                <div>
+                    <a href="registration.html">რეგისტრაცია</a>
+                    <a href="autho.html">შესვლა</a>
+                </div>
+            </nav>
+            <div class="mobile-menu" onclick="myFunction()">
+                <span>მენიუ</span>
+                <img src="assets/icons/bars.svg" width="15px" alt="menubar">
+            </div>
+        </div>
+    </header>
+
+    <div class="container contact view-port-fit">
+        <div class="contact-form">
+            <h1>კონტაქტის ფორმა</h1>
+            <p>შეავსეთ ქვემოთ მოცემული ველები და დააჭირე გაგზავნის ღილაკს</p>
+
+            <form action="">
+                <div class="contact-form-group">
+                    <label for="email">ელ-ფოსტა</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="contact-form-group">
+                    <label for="topic">შეტყობინება</label>
+                    <input type="text" id="topic">
+                </div>
+                <div class="contact-form-group">
+                    <label for="message">თემა</label>
+                    <textarea name="message" id="message" rows="5"></textarea>
+                </div>
+                <button type="submit">გაგზავნა</button>
+            </form>
+
+        </div>
+        <div class="contact-info">
+
+            <h2>საკონტაქტო ინფორმაცია:</h2>
+
+            <ul>
+                <li><strong class="contact-li">ფეისბუქი:</strong> <a href="index.html">john doe</a></li>
+                <li><strong class="contact-li">მისამართი:</strong> ქ.თბილისი, რუსთაველის #1</li>
+                <li><strong class="contact-li">ელფოსტა:</strong> john.doe@gmail.com</li>
+                <li><strong class="contact-li">ტელეფონი:</strong> 577-71-17-77</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <p> © ლორემ იპსუმ ფოთლებსა ლურჯის ხლუპით, სავარძალს შეასრულოს მოესმათ ბიოგრაფიების ლაპარაკითაც. ლაპარაკი
+                თაცნოვიკოვის წაუვიდა ლლოიდ. იატაკზედაც ჰეროლდები მან სიმსივნით, თთან.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

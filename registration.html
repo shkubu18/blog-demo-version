@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/registration-responsive.css">
+</head>
+
+<body>
+
+    <header class="d-flex">
+        <div class="container d-flex">
+            <a href="index.html">
+                <img class="logo" src="assets/icons/logo.svg" alt="საიტის ლოგო">
+            </a>
+            <nav id="nav">
+                <div>
+                    <a href="index.html">მთავარი</a>
+                    <a href="contact.html">კონტაქტი</a>
+                    <a href="help.html">დახმარება</a>
+                </div>
+                <div>
+                    <a href="registration.html">რეგისტრაცია</a>
+                    <a href="autho.html">შესვლა</a>
+                </div>
+            </nav>
+
+            <div class="mobile-menu" onclick="myFunction()">
+                <span>მენიუ</span>
+                <img src="assets/icons/bars.svg" width="15px" alt="menubar">
+            </div>
+        </div>
+    </header>
+
+    <div class="container body-conteiner">
+        <div class="autho-form-container">
+            <form action="" method="get">
+                <div class="userName">
+                    <label class="text-input-label" for="userName">სახელი</label>
+                    <input class="text-input" type="text" name="userName" id="userName"
+                        placeholder="ჩაწერეთ თქვენი სახელი" required>
+                </div>
+                <div class="lastName">
+                    <label class="text-input-label" for="lastName">გვარი</label>
+                    <input class="text-input" type="text" name="lastname" id="lastName"
+                        placeholder="ჩაწერეთ თქვენი გვარი" required>
+                </div>
+                <div class="email">
+                    <label class="text-input-label" for="email">მომხმარებლის ელ-ფოსტა</label>
+                    <input class="text-input" type="email" name="email" id="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა"
+                        required>
+                </div>
+                <div class="date">
+                    <label class="text-input-label" for="date">დაბადების თარიღი</label>
+                    <input class="text-input" type="date" name="date" id="date" required>
+                </div>
+                <label class="text-input-label" for="date-location">დაბადების ადგილმდებარეობა</label>
+                <select name="date-location" id="date-location" class="text-input" required>
+                    <option></option>
+                    <option>საბერძნეთი</option>
+                    <option>ამერიკა</option>
+                    <option>ინგლისი</option>
+                    <option>საქართველო</option>
+                    <option>იტალია</option>
+                </select>
+                <div class="sex">
+                    <label class="text-input-label" for="sex">აირჩიე სქესი:</label>
+                    <div class="sex-container">
+                        <input class="sex-radio" type="radio" name="sex" id="sex-male" required>
+                        <label class="sex-male" for="sex-male">კაცი</label>
+                    </div>
+                    <div class="sex-container">
+                        <input class="sex-radio" type="radio" name="sex" id="sex-female" required>
+                        <label class="sex-female" for="sex-female">ქალი</label>
+                    </div>
+                </div>
+
+                <div class="pass">
+                    <label class="text-input-label" for="pass">პაროლი</label>
+                    <input class="text-input" type="password" name="pass" id="pass" placeholder="ჩაწერეთ პაროლი"
+                        required>
+                </div>
+                <div class="pass">
+                    <label class="text-input-label" for="pass">გაიმეორე პაროლი</label>
+                    <input class="text-input" type="password" name="pass" id="pass" placeholder="ჩაწერეთ პაროლი"
+                        required>
+                </div>
+
+
+                <button class="submit-button">რეგისტრაცია</button>
+                <a class="reset-pass" href="autho.html">ავტორიზაცია</a>
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p> © ლორემ იპსუმ ფოთლებსა ლურჯის ხლუპით, სავარძალს შეასრულოს მოესმათ ბიოგრაფიების ლაპარაკითაც. ლაპარაკი
+                თაცნოვიკოვის წაუვიდა ლლოიდ. იატაკზედაც ჰეროლდები მან სიმსივნით, თთან.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

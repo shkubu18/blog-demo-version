@@ -1,0 +1,106 @@
+.container.contact {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 800px;
+}
+
+.contact-form {
+    height: 100%;
+}
+
+header .mobile-menu {
+    display: none;
+    color: white;
+}
+
+
+.container.contact h1 {
+    font-weight: 400;
+}
+
+.container.contact p {
+    color: black;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.contact-form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    color: black;
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+    background-color: white;
+    color: black;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 3px;
+    
+} 
+
+.container.contact textarea {
+    height: initial;
+}
+
+.container.contact button {
+    background: linear-gradient(45deg, rgb(30, 196, 99), rgb(36, 243, 146));
+    color: white;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.contact-info {
+    height: 100%;
+    margin-left: 22px;
+}
+
+.contact-info a {
+    display: inline;
+}
+
+.contact-info h2 {
+    font-weight: 400;
+}
+
+.contact-info ul li a {
+    color: rgb(238, 255, 0);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.contact-li {
+    color: white
+}
+
+.contact-info ul {
+    padding-top: 10px;
+    color: whitesmoke;
+    background: linear-gradient(45deg, rgb(108, 6, 243), rgba(0, 0, 255, 0.781));
+    border-radius: 40px 20px 40px 20px;
+}
+
+.contact-info ul li {
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: rgb(238, 255, 0);
+}
+
+.contact-info ul li a:hover {
+    text-decoration: underline;
+}
+
+
+

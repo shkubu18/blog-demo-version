@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>პაროლის აღდგენა</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset-pass-responsive.css">
+</head>
+
+<body>
+
+    <header class="d-flex">
+        <div class="container d-flex">
+            <a href="index.html">
+                <img class="logo" src="assets/icons/logo.svg" alt="საიტის ლოგო">
+            </a>
+            <nav id="nav">
+                <div>
+
+                    <a href="index.html">მთავარი</a>
+                    <a href="contact.html">კონტაქტი</a>
+                    <a href="help.html">დახმარება</a>
+                </div>
+                <div>
+                    <a href="registration.html">რეგისტრაცია</a>
+                    <a href="autho.html">შესვლა</a>
+                </div>
+            </nav>
+            <div class="mobile-menu" onclick="myFunction()">
+                <span>მენიუ</span>
+                <img src="assets/icons/bars.svg" width="15px" alt="menubar">
+            </div>
+        </div>
+    </header>
+
+    <div class="container body-conteiner">
+        <div class="autho-form-container">
+            <form action="" method="get">
+                <div class="email">
+                    <label class="text-input-label" for="email">მომხმარებლის ელ-ფოსტა</label>
+                    <input class="text-input" type="email" name="email" id="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა"
+                        required>
+                </div>
+                <button class="submit-button">პაროლის აღდგენა</button>
+                <a class="registration" href="registration.html">რეგისტრაცია</a>
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p> © ლორემ იპსუმ ფოთლებსა ლურჯის ხლუპით, სავარძალს შეასრულოს მოესმათ ბიოგრაფიების ლაპარაკითაც. ლაპარაკი
+                თაცნოვიკოვის წაუვიდა ლლოიდ. იატაკზედაც ჰეროლდები მან სიმსივნით, თთან.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

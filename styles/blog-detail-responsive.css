@@ -1,0 +1,107 @@
+/******* laptops *******/
+@media screen and (max-width: 995px) {
+    .container {
+        width: 100%;
+    }
+
+    .container.blog-detail{
+        width: 600px;
+    }
+
+    .similar-container .card{
+        grid-column: 1 / span 5;
+        margin-bottom: 15px;
+    }
+
+    .last-button {
+        padding: 10px 15px;
+    }
+
+}
+
+/******* tablets *******/
+@media screen and (max-width: 820px) {
+    .container  {
+        width: 100%;
+    }
+
+    header {
+        padding-inline: 15px;
+    }
+
+    .container .blog-container {
+        width: 400px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header .mobile-menu {
+        display: flex;
+        gap: 0 5px;
+        cursor: pointer;
+        padding-block: 15px;
+        font-size: 17px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav.active {
+        display: flex;
+        position: absolute;
+        background: linear-gradient(45deg, rgb(70, 12, 206), black);
+        width: 100%;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+    }
+
+    header nav.active > div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    header nav.active a {
+        display: block;
+        padding: 16.9px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    header nav.active > div:last-child a:last-child {
+        border-bottom: 0;
+    }
+
+    header > .container {
+        justify-content: space-between;
+    }
+
+    footer {
+        height: initial;
+    }
+    
+}
+
+/******* mobile phones *******/
+@media screen and (max-width: 615px) {
+    .container.blog-detail {
+        width: 365px;
+    }
+}
+
+@media screen and (max-width: 371px) {
+    .container.blog-detail {
+        width: 210px;
+    }
+
+    .container.blog-detail h1 {
+        color: black;
+    }
+
+    footer {
+        padding-inline: 10px;
+    }
+}
