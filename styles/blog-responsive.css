@@ -70,6 +70,11 @@
         padding-top: 16px;
     }
 
+    .category-navigation-list:hover {
+        border: 3px solid white;
+        
+    }
+
     .blog-container {
         grid-column: 1 / span 4;
         grid-template-columns: repeat(2, minmax(0, 1fr))
